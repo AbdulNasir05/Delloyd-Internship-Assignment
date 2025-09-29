@@ -1,0 +1,35 @@
+Image,Category,Label
+001.jpg,DOG,Eskimo dog
+002.jpg,DOG,boxer
+003.jpg,DOG,Tibetan mastiff
+004.jpg,DOG,Bedlington terrier
+005.webp,DOG,golden retriever
+006.jpg,DOG,German shepherd
+007.jfif,DOG,boxer
+008.jfif,DOG,Shih-Tzu
+009.jfif,DOG,Chihuahua
+010.jfif,DOG,Great Dane
+011.jfif,DOG,Saint Bernard
+012.jfif,DOG,dalmatian
+013.jfif,DOG,bull mastiff
+014.jfif,DOG,Japanese spaniel
+015.jfif,DOG,groenendael
+016.jfif,DOG,black-and-tan coonhound
+017.jpg,DOG,beagle
+018.jpg,DOG,miniature poodle
+019.jpg,DOG,Border collie
+020.jpg,DOG,Doberman
+021.jpg,DOG,Labrador retriever
+022.jfif,DOG,Pomeranian
+023.jpg,DOG,Rottweiler
+201.jfif,CAT,Egyptian cat
+202.jfif,CAT,Persian cat
+203.jfif,CAT,Egyptian cat
+204.jpg,CAT,tabby
+205.webp,CAT,Siamese cat
+206.jpg,CAT,Persian cat
+101.jpg,MIsclassified Dog,tiger
+102.jfif,MIsclassified Dog,red wolf
+103.jfif,MIsclassified Dog,giant panda
+104.jpg,MIsclassified Dog,zebra
+105.webp,MIsclassified Dog,dingo
