@@ -1,4 +1,5 @@
-# ** 🚗 License Plate Matching & Similarity Testing **
+# 🚗 License Plate Matching & Similarity Testing
+
 # ** 📌 Overview **
 
 This Python program tests the similarity of Indian license plates using various string-matching algorithms. It generates valid and invalid license plates, compares them, and produces a detailed test report.
@@ -182,5 +183,3 @@ pip install pytest
 Abdul Nasir
 
 Delloyd Internship 2025
-
-DelloyD internship 2025
