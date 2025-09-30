@@ -32,7 +32,8 @@ cat1.jpeg
 random_animal.webp
 
 # ** 📤 Output **
-# ** 1️⃣ Console Output **
+
+1️⃣ Console Output
 
 Each image is printed with its classification:
 
@@ -44,7 +45,7 @@ Each image is printed with its classification:
 
 [Misclassified DOg] random_animal.webp  -->  red panda
 
-# ** 2️⃣ PDF Report (dog_cat_classification_report.pdf) **
+2️⃣ PDF Report (dog_cat_classification_report.pdf)
 
 Includes:
 
@@ -80,7 +81,7 @@ Other Predictions
 
 random_animal.webp: red panda
 
-# ** 3️⃣ CSV Report (classification_results.csv) **
+3️⃣ CSV Report (classification_results.csv)
 
 Contains structured results:
 
@@ -129,3 +130,9 @@ Check generated files:
 dog_cat_classification_report.pdf
 
 classification_results.csv
+
+# ** 👨‍💻 Author **
+
+Abdul Nasir
+
+Delloyd Internship 2025
