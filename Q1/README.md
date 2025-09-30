@@ -23,7 +23,9 @@ Results are printed in the console and also saved in a CSV file (license_plate_s
 At the top of the script, update the following as needed:
 
 FRONT_DIR = Path(r"C:\...\Q1\Broken\Front")   # Folder with front labels
+
 REAR_DIR  = Path(r"C:\...\Q1\Broken\Rear")    # Folder with rear labels
+
 BROKEN_CLASS_ID = 1                           # YOLO class ID for "broken plate"
 
 # **▶️ Usage** 
@@ -31,6 +33,7 @@ BROKEN_CLASS_ID = 1                           # YOLO class ID for "broken plate"
 Place YOLO .txt label files for front and rear plates in their respective folders:
 
 Q1/Broken/Front/car1.txt
+
 Q1/Broken/Rear/car1.txt
 
 
@@ -53,22 +56,34 @@ Save results in license_plate_status.csv.
 Found 12 paired cars.
 
 === License Plate Status ===
+
 Car        Front      Rear       Overall   
+
 ----------------------------------------
+
 car1       BROKEN     OK         BROKEN
+
 car2       OK         BROKEN     BROKEN
+
 car3       BROKEN     BROKEN     BROKEN
+
 ...
+
 car12      OK         OK         OK
 
 
 CSV (license_plate_status.csv):
 
 car,front_status,rear_status,overall_status
+
 car1,BROKEN,OK,BROKEN
+
 car2,OK,BROKEN,BROKEN
+
 car3,BROKEN,BROKEN,BROKEN
+
 ...
+
 car12,OK,OK,OK
 
 # **📦 Requirements** 
