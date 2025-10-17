@@ -10,7 +10,7 @@ def test_with_sample_images():
     print("🧪 Testing Face Landmark Detector...")
     
     # Example of how to use the detector
-    image_path = "your_test_image.jpg"  # Replace with actual image path
+    image_path = r"C:\Users\Abdul Muizz\Downloads\Delloyd-Internship-Assignment-main\Q3\goal_cristianoronaldo-cropped_1td5dt3z4fahj1wbhl9647ciyw.jpg"  # Replace with actual image path
     
     try:
         result = detector.process_image(image_path, "test_output.jpg")

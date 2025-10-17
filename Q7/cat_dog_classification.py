@@ -9,9 +9,14 @@ from reportlab.lib.styles import getSampleStyleSheet
 import csv
 
 # ---------- SETTINGS ----------
-image_folder = r"C:\Users\Home\Desktop\Nasir\Delloyd Internship\Q7\dog_cat_images"
-report_name = "dog_cat_classification_report.pdf"
-csv_name = "classification_results.csv"
+image_folder = r"C:\Users\Abdul Muizz\Downloads\Delloyd-Internship-Assignment-main\Q7\dog_cat_images"
+
+# Output folder
+output_folder = r"C:\Users\Abdul Muizz\Downloads\Delloyd-Internship-Assignment-main\Q7"
+os.makedirs(output_folder, exist_ok=True)  # Ensure folder exists
+
+report_name = os.path.join(output_folder, "dog_cat_classification_report.pdf")
+csv_name = os.path.join(output_folder, "classification_results.csv")
 
 # ---------- MODEL ----------
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
@@ -23,14 +28,11 @@ from torchvision.models import ResNet50_Weights
 categories = ResNet50_Weights.DEFAULT.meta["categories"]
 
 # Predefined dog & cat classes (using ImageNet index ranges)
-# Dog breeds = indices 151–268 (118 classes)
-dog_indices = list(range(151, 269))
+dog_indices = list(range(151, 269))  # Dog breeds
 dog_classes = [categories[i] for i in dog_indices]
 
-# Domestic cats = indices 281–285 (5 classes)
-cat_indices = list(range(281, 286))
+cat_indices = list(range(281, 286))  # Domestic cats
 cat_classes = [categories[i] for i in cat_indices]
-
 
 # ---------- TRANSFORMS ----------
 transform = transforms.Compose([
@@ -61,7 +63,7 @@ for fname in os.listdir(image_folder):
         continue
 
     img_path = os.path.join(image_folder, fname)
-    label, conf = predict_image(img_path)  # get top1 only
+    label, conf = predict_image(img_path)
 
     if label in dog_classes:
         marker = "[DOG]"
@@ -72,7 +74,7 @@ for fname in os.listdir(image_folder):
         output = f"{marker} {fname}  -->  {label}"
         predicted_cats.append((fname, label))
     else:
-        marker = "[Misclassified DOg]"
+        marker = "[Misclassified Dog]"
         output = f"{marker} {fname}  -->  {label}"
         misclassified.append((fname, label))
 
@@ -125,6 +127,6 @@ with open(csv_name, mode="w", newline="") as f:
     for fname, label in predicted_cats:
         writer.writerow([fname, "CAT", label])
     for fname, label in misclassified:
-        writer.writerow([fname, "MIsclassified Dog", label])
+        writer.writerow([fname, "Misclassified Dog", label])
 
 print(f"CSV results saved as: {csv_name}")

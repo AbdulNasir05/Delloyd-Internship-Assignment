@@ -28,8 +28,8 @@ Image,Category,Label
 204.jpg,CAT,tabby
 205.webp,CAT,Siamese cat
 206.jpg,CAT,Persian cat
-101.jpg,MIsclassified Dog,tiger
-102.jfif,MIsclassified Dog,red wolf
-103.jfif,MIsclassified Dog,giant panda
-104.jpg,MIsclassified Dog,zebra
-105.webp,MIsclassified Dog,dingo
+101.jpg,Misclassified Dog,tiger
+102.jfif,Misclassified Dog,red wolf
+103.jfif,Misclassified Dog,giant panda
+104.jpg,Misclassified Dog,zebra
+105.webp,Misclassified Dog,dingo
